@@ -41,13 +41,14 @@ in {
       exec-once = [
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
-        "fragments"
+        # "fragments"
       ];
 
       monitor = [
         # "eDP-1, 1920x1080, 0x0, 1"
         # "HDMI-A-1, 2560x1440, 1920x0, 1"
-        ",preferred,auto,1"
+        ",preferred,auto,2
+        "
       ];
 
       general = {
@@ -61,12 +62,13 @@ in {
       };
 
       input = {
-        kb_layout = "us,de";
+        kb_layout = "de,us";
         follow_mouse = 1;
         touchpad = {
           natural_scroll = "yes";
           disable_while_typing = true;
           drag_lock = true;
+          scroll_factor = 0.3;
         };
         sensitivity = 0;
         float_switch_override_focus = 2;
@@ -113,7 +115,7 @@ in {
         mvactive = binding "SUPER ALT" "moveactive";
         mvtows = binding "SUPER SHIFT" "movetoworkspace";
         e = "exec, ags -b hypr";
-        arr = [1 2 3 4 5 6 7];
+        arr = [1 2 3 4 5 6 7 8 9];
       in
         [
           "CTRL SHIFT, R,  ${e} quit; ags -b hypr"
@@ -121,10 +123,10 @@ in {
           "SUPER, Tab,     ${e} -t overview"
           ",XF86PowerOff,  ${e} -r 'powermenu.shutdown()'"
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
-          ",Print,         exec, ${screenshot}"
-          "SHIFT,Print,    exec, ${screenshot} --full"
-          "SUPER, Return, exec, xterm" # xterm is a symlink, not actually xterm
-          "SUPER, W, exec, firefox"
+          "SUPER SHIFT, P, exec, ${screenshot}"
+          "SUPER, P, exec, ${screenshot} --full"
+          "SUPER, Q, exec, xterm" # xterm is a symlink, not actually xterm
+          "SUPER, B, exec, firefox"
           "SUPER, E, exec, wezterm -e lf"
 
           # youtube
@@ -132,11 +134,11 @@ in {
 
           "ALT, Tab, focuscurrentorlast"
           "CTRL ALT, Delete, exit"
-          "ALT, Q, killactive"
+          "SUPER, C, killactive"
           "SUPER, F, togglefloating"
           "SUPER, G, fullscreen"
           "SUPER, O, fakefullscreen"
-          "SUPER, P, togglesplit"
+          "SUPER, H, togglesplit"
 
           (mvfocus "k" "u")
           (mvfocus "j" "d")
