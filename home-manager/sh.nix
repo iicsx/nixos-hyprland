@@ -23,6 +23,8 @@
     "gr" = "git reset --soft HEAD~1";
 
     "del" = "gio trash";
+
+    "sudoe" = "sudo -E -s";
   };
 in {
   options.shellAliases = with lib; mkOption {

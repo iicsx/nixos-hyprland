@@ -7,8 +7,6 @@
     auto-optimise-store = true;
   };
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-
   # camera
   programs.droidcam.enable = true;
 
@@ -79,6 +77,7 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
+    kernelPackages = pkgs.linuxPackages_latest;
   };
 
   system.stateVersion = "23.05";

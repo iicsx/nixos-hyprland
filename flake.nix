@@ -27,20 +27,20 @@
     };
 
     # macos hm config
-    homeConfigurations = {
-      "nex" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-darwin;
-        extraSpecialArgs = {inherit inputs;};
-        modules = [
-          ({pkgs, ...}: {
-            nix.package = pkgs.nix;
-            home.username = "nex";
-            home.homeDirectory = "/Users/nex";
-            imports = [./macos/home.nix];
-          })
-        ];
-      };
-    };
+    # homeConfigurations = {
+    #   "nex" = home-manager.lib.homeManagerConfiguration {
+    #     pkgs = nixpkgs.legacyPackages.x86_64-darwin;
+    #     extraSpecialArgs = {inherit inputs;};
+    #     modules = [
+    #       ({pkgs, ...}: {
+    #         nix.package = pkgs.nix;
+    #         home.username = "nex";
+    #         home.homeDirectory = "/Users/nex";
+    #         imports = [./macos/home.nix];
+    #       })
+    #     ];
+    #   };
+    # };
   };
 
   inputs = {
