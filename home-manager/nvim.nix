@@ -23,8 +23,8 @@
 
   programs.neovim = {
     enable = true;
-    viAlias = true;
-    vimAlias = true;
+    # viAlias = true;
+    # vimAlias = true;
 
     withRuby = true;
     withNodeJs = true;
@@ -33,6 +33,8 @@
     extraPackages = with pkgs; [
       git
       gcc
+      glibc
+      jdk
       gnumake
       unzip
       wget
@@ -42,8 +44,10 @@
       fd
       fzf
       cargo
+      python3
 
       nil
+      prettierd
       lua-language-server
       stylua
       alejandra

@@ -64,11 +64,13 @@ in {
       input = {
         kb_layout = "de,us";
         follow_mouse = 1;
+	repeat_delay = 200;
+	kb_options = grp:alt_shift_toggle;
         touchpad = {
           natural_scroll = "yes";
           disable_while_typing = true;
           drag_lock = true;
-          scroll_factor = 0.3;
+          scroll_factor = "0.2";
         };
         sensitivity = 0;
         float_switch_override_focus = 2;
@@ -137,7 +139,7 @@ in {
           "SUPER, C, killactive"
           "SUPER, F, togglefloating"
           "SUPER, G, fullscreen"
-          "SUPER, O, fakefullscreen"
+          # "SUPER, O, fakefullscreen"
           "SUPER, H, togglesplit"
 
           (mvfocus "k" "u")

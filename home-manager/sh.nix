@@ -7,17 +7,15 @@
   aliases = {
     "db" = "distrobox";
     "tree" = "eza --tree";
-    "nv" = "nvim";
+    "vh" = "nvim .";
 
-    "ll" = "ls";
-    "éé" = "ls";
-    "és" = "ls";
-    "l" = "ls";
+    "la" = "ls -la";
 
     ":q" = "exit";
     "q" = "exit";
 
     "gs" = "git status";
+    "gd" = "git diff";
     "gb" = "git branch";
     "gch" = "git checkout";
     "gc" = "git commit";
