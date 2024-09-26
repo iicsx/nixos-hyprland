@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/nex/.cache/nvim/packer_hererocks/2.1.1693350652/share/lua/5.1/?.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1693350652/share/lua/5.1/?/init.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1693350652/lib/luarocks/rocks-5.1/?.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1693350652/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/nex/.cache/nvim/packer_hererocks/2.1.1693350652/lib/lua/5.1/?.so"
+local package_path_str = "/home/nex/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1702233742/share/lua/5.1/?/init.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?.lua;/home/nex/.cache/nvim/packer_hererocks/2.1.1702233742/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/nex/.cache/nvim/packer_hererocks/2.1.1702233742/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -94,10 +94,10 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["codeium.vim"] = {
+  ["copilot.vim"] = {
     loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/codeium.vim",
-    url = "https://github.com/Exafunction/codeium.vim"
+    path = "/home/nex/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
   },
   ["format-on-save.nvim"] = {
     loaded = true,
@@ -124,14 +124,6 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["markdown.nvim"] = {
-    config = { "\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0" },
-    load_after = {},
-    loaded = true,
-    needs_bufread = false,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/opt/markdown.nvim",
-    url = "https://github.com/MeanderingProgrammer/markdown.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -151,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["noice.nvim"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
   },
   ["nordic.nvim"] = {
     loaded = true,
@@ -177,11 +164,6 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -192,11 +174,6 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
-  ["nvim-ts-autotag"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -206,11 +183,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/oceanic-next.nvim",
     url = "https://github.com/roflolilolmao/oceanic-next.nvim"
-  },
-  ["oil.nvim"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/oil.nvim",
-    url = "https://github.com/stevearc/oil.nvim"
   },
   ["oxocarbon.nvim"] = {
     loaded = true,
@@ -242,16 +214,6 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
-  ["rainbow-delimiters.nvim"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
-    url = "https://github.com/HiPhish/rainbow-delimiters.nvim"
-  },
-  ["sonarlint.nvim"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/sonarlint.nvim",
-    url = "https://github.com/danarth/sonarlint.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -273,20 +235,10 @@ _G.packer_plugins = {
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-closetag"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/vim-closetag",
-    url = "https://github.com/alvan/vim-closetag"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/nex/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-rest-console"] = {
-    loaded = true,
-    path = "/home/nex/.local/share/nvim/site/pack/packer/start/vim-rest-console",
-    url = "https://github.com/diepm/vim-rest-console"
   }
 }
 
@@ -295,15 +247,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for tokyonight.nvim]], true)
 try_loadstring("\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nstyle\tmoon\nsetup\15tokyonight\frequire\0", "config", "tokyonight.nvim")
 time([[Config for tokyonight.nvim]], false)
--- Load plugins in order defined by `after`
-time([[Sequenced loading]], true)
-vim.cmd [[ packadd nvim-treesitter ]]
-vim.cmd [[ packadd markdown.nvim ]]
-
--- Config for: markdown.nvim
-try_loadstring("\27LJ\2\nA\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\20render-markdown\frequire\0", "config", "markdown.nvim")
-
-time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
