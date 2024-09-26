@@ -1,6 +1,7 @@
 {
   inputs,
   lib,
+  pkgs,
   ...
 }: let
   username = "nex";
@@ -32,6 +33,8 @@ in {
       "docker"
     ];
   };
+
+  nix.package = pkgs.nixVersions.latest;
 
   home-manager = {
     backupFileExtension = "backup";
