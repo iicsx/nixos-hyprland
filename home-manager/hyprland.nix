@@ -64,8 +64,8 @@ in {
       input = {
         kb_layout = "de,us";
         follow_mouse = 1;
-	repeat_delay = 200;
-	kb_options = grp:alt_shift_toggle;
+	      repeat_delay = 200;
+	      kb_options = grp:alt_shift_toggle;
         touchpad = {
           natural_scroll = "yes";
           disable_while_typing = true;
@@ -106,7 +106,7 @@ in {
         (f "xdg-desktop-portal-gnome")
         (f "de.haeckerfelix.Fragments")
         (f "com.github.Aylur.ags")
-        "workspace 7, title:Spotify"
+        "workspace 9, title:Spotify"
       ];
 
       bind = let
@@ -127,7 +127,7 @@ in {
           ",XF86Launch4,   ${e} -r 'recorder.start()'"
           "SUPER SHIFT, P, exec, ${screenshot}"
           "SUPER, P, exec, ${screenshot} --full"
-          "SUPER, Q, exec, xterm" # xterm is a symlink, not actually xterm
+          "SUPER, Q, exec, kitty" 
           "SUPER, B, exec, firefox"
           "SUPER, E, exec, wezterm -e lf"
 
