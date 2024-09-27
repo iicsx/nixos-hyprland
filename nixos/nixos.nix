@@ -32,6 +32,7 @@ in {
       "libvirtd"
       "docker"
     ];
+    shell = pkgs.nushell;
   };
 
   nix.package = pkgs.nixVersions.latest;
@@ -47,8 +48,8 @@ in {
       imports = [
         ../home-manager/nvim.nix
         ../home-manager/ags.nix
-        ../home-manager/blackbox.nix
         ../home-manager/browser.nix
+        ../home-manager/kitty.nix
         ../home-manager/dconf.nix
         ../home-manager/distrobox.nix
         ../home-manager/git.nix
@@ -58,8 +59,6 @@ in {
         ../home-manager/sh.nix
         ../home-manager/starship.nix
         ../home-manager/theme.nix
-        ../home-manager/tmux.nix
-        ../home-manager/wezterm.nix
         ./home.nix
       ];
     };
