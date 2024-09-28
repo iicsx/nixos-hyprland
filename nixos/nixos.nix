@@ -55,6 +55,7 @@ in {
         ../home-manager/git.nix
         ../home-manager/hyprland.nix
         ../home-manager/lf.nix
+        ../home-manager/ranger.nix
         ../home-manager/packages.nix
         ../home-manager/sh.nix
         ../home-manager/starship.nix
