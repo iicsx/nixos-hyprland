@@ -42,6 +42,7 @@ in {
         "ags -b hypr"
         "hyprctl setcursor Qogir 24"
         # "fragments"
+        "nm-applet"
       ];
 
       monitor = [
@@ -70,7 +71,7 @@ in {
           natural_scroll = "yes";
           disable_while_typing = true;
           drag_lock = true;
-          scroll_factor = "0.2";
+          scroll_factor = "0.1";
         };
         sensitivity = 0;
         float_switch_override_focus = 2;
@@ -129,7 +130,7 @@ in {
           "SUPER, P, exec, ${screenshot} --full"
           "SUPER, Q, exec, kitty" 
           "SUPER, B, exec, firefox"
-          "SUPER, E, exec, wezterm -e lf"
+          "SUPER, E, exec, kitty -e ranger"
 
           # youtube
           ", XF86Launch1,  exec, ${yt}"
@@ -137,10 +138,10 @@ in {
           "ALT, Tab, focuscurrentorlast"
           "CTRL ALT, Delete, exit"
           "SUPER, C, killactive"
-          "SUPER, F, togglefloating"
-          "SUPER, G, fullscreen"
-          # "SUPER, O, fakefullscreen"
+          "SUPER, V, togglefloating"
+          "SUPER, F, fullscreen"
           "SUPER, H, togglesplit"
+          "SUPER, S, togglespecialworkspace"
 
           (mvfocus "k" "u")
           (mvfocus "j" "d")
@@ -150,6 +151,7 @@ in {
           (ws "right" "e+1")
           (mvtows "left" "e-1")
           (mvtows "right" "e+1")
+          (mvtows "s" "special")
           (resizeactive "k" "0 -20")
           (resizeactive "j" "0 20")
           (resizeactive "l" "20 0")
