@@ -12,6 +12,7 @@
     enable = true;
     settings = {
       show_hidden = true;
+      draw_borders = "both";
       preview_images = true;
       preview_images_method = "kitty";
     };
