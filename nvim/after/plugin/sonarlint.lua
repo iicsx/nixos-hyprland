@@ -28,6 +28,7 @@ require('sonarlint').setup({
     'python',
     'cpp',
     -- Requires nvim-jdtls, otherwise an error message will be printed
-    'javascript'
+    'javascript',
+    'typescript',
   }
 })
