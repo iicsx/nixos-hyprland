@@ -66,7 +66,8 @@ return require('packer').startup(function(use)
   use('nvim-tree/nvim-web-devicons')
   use('xiyaowong/transparent.nvim')
   use('lewis6991/gitsigns.nvim')
-  use('romgrk/barbar.nvim')
+  -- use('romgrk/barbar.nvim')
+  use('kdheepak/tabline.nvim')
   use({
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
