@@ -10,6 +10,14 @@ in {
       github.user = name;
       push.autoSetupRemote = true;
     };
+    delta = {
+      enable = true;
+      options = {
+        navigate = true;    
+        line-numbers = true;
+        syntax-theme = "Monokai Extended";
+      };
+    };
     userEmail = "maxinies00@gmail.com";
     userName = name;
   };
