@@ -71,7 +71,7 @@ in {
           natural_scroll = "yes";
           disable_while_typing = true;
           drag_lock = true;
-          scroll_factor = "0.1";
+          scroll_factor = "0.2";
         };
         sensitivity = 0;
         float_switch_override_focus = 2;
