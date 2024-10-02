@@ -9,6 +9,7 @@ in {
   imports = [
     /etc/nixos/hardware-configuration.nix
     ./system.nix
+    ./files.nix
     ./audio.nix
     ./locale.nix
     ./nautilus.nix

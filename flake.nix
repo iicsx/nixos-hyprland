@@ -1,5 +1,5 @@
 {
-  description = "Configurations of Aylur";
+  description = "Configurations of nex";
 
   outputs = inputs @ {
     self,
@@ -32,6 +32,11 @@
 
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    zen-browser = {
+      url = "github:n3xistence/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

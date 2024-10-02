@@ -1,4 +1,6 @@
-{inputs, ...}: {
+{inputs, ...}: let
+  system = "x86_64-linux";
+in {
   home = {
     sessionVariables.BROWSER = "firefox";
 
@@ -7,6 +9,10 @@
       source = inputs.firefox-gnome-theme;
     };
   };
+
+  home.packages = with inputs; [
+    zen-browser.packages."${system}".specific
+  ];
 
   programs.firefox = {
     enable = true;
