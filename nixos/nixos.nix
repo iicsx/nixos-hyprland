@@ -61,6 +61,7 @@ in {
         ../home-manager/sh.nix
         ../home-manager/starship.nix
         ../home-manager/theme.nix
+        ../home-manager/zoxide.nix
         ./home.nix
       ];
     };
