@@ -22,8 +22,6 @@
     "ga" = "git add";
     "gr" = "git reset --soft HEAD~1";
 
-    "del" = "gio trash";
-
     "sudoe" = "sudo -E -s";
   };
 in {
