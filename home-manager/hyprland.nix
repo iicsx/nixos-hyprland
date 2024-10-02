@@ -129,7 +129,7 @@ in {
           "SUPER SHIFT, P, exec, ${screenshot}"
           "SUPER, P, exec, ${screenshot} --full"
           "SUPER, Q, exec, kitty" 
-          "SUPER, B, exec, firefox"
+          "SUPER, B, exec, zen"
           "SUPER, E, exec, kitty -e ranger"
 
           # youtube
