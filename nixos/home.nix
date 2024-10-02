@@ -1,4 +1,7 @@
-{config, ...}: {
+{ pkgs, config, ...}: let
+  user = "nex";
+  home = config.home.homeDirectory;
+in {
   news.display = "show";
 
   nix.settings = {
@@ -12,8 +15,8 @@
       NIXPKGS_ALLOW_UNFREE = "1";
       NIXPKGS_ALLOW_INSECURE = "1";
       BAT_THEME = "base16";
-      GOPATH = "${config.home.homeDirectory}/.local/share/go";
-      GOMODCACHE = "${config.home.homeDirectory}/.cache/go/pkg/mod";
+      GOPATH = "${home}/.local/share/go";
+      GOMODCACHE = "${home}/.cache/go/pkg/mod";
     };
 
     sessionPath = [
@@ -21,20 +24,17 @@
     ];
   };
 
-  gtk.gtk3.bookmarks = let
-    home = config.home.homeDirectory;
-  in [
+  gtk.gtk3.bookmarks = [
     "file://${home}/Documents"
     "file://${home}/Music"
     "file://${home}/Pictures"
     "file://${home}/Videos"
     "file://${home}/Downloads"
     "file://${home}/Desktop"
-    "file://${home}/Work"
-    "file://${home}/Projects"
-    "file://${home}/Vault"
-    "file://${home}/School"
     "file://${home}/.config Config"
+    "file://${home}/source/repos Repos"
+    "file://${home}/source/setup Setup"
+    "file://${home}/source/notes Notes"
   ];
 
   services = {
