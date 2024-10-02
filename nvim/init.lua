@@ -12,5 +12,6 @@ end
 vim.cmd([[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']])
 
 vim.cmd([[autocmd VimEnter * lua sync_all()]])
+vim.cmd([[autocmd VimEnter * "TransparentEnable"]])
 
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
