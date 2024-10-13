@@ -4,10 +4,11 @@
   lib,
   ...
 }: let
+  paddingModifier = "padding"; # padding-w, padding-h
+
   aliases = {
     "db" = "distrobox";
     "tree" = "eza --tree";
-    "vh" = "nvim .";
 
     "la" = "ls -la";
 
@@ -24,6 +25,11 @@
 
     "sudoe" = "sudo -E -s";
   };
+
+  genericAliases = {
+    "nvim" = "kitten @ set-spacing ${paddingModifier}=0 && nvim && kitten @ set-spacing ${paddingModifier}=10";
+    "vh" = "kitten @ set-spacing ${paddingModifier}=0 && vimHere && kitten @ set-spacing ${paddingModifier}=10";
+  };
 in {
   options.shellAliases = with lib; mkOption {
     type = types.attrsOf types.str;
@@ -32,7 +38,7 @@ in {
 
   config.programs = {
     zsh = {
-      shellAliases = aliases // config.shellAliases;
+      shellAliases = aliases // genericAliases // config.shellAliases;
       enable = true;
       enableCompletion = true;
       autosuggestion.enable = true;
@@ -47,7 +53,7 @@ in {
     };
 
     bash = {
-      shellAliases = aliases // config.shellAliases;
+      shellAliases = aliases // genericAliases // config.shellAliases;
       enable = true;
       initExtra = "SHELL=${pkgs.bash}";
     };
@@ -76,7 +82,7 @@ in {
           rm.always_trash = true;
 
           table = {
-            mode = "compact"; # compact thin rounded
+            mode = "rounded"; # compact thin rounded
             index_mode = "always"; # alway never auto
             header_on_separator = false;
           };
@@ -120,6 +126,18 @@ in {
         alias pueue = ${pkgs.pueue}/bin/pueue
         alias pueued = ${pkgs.pueue}/bin/pueued
         use ${pkgs.nu_scripts}/share/nu_scripts/modules/background_task/task.nu
+
+        alias vh = do {
+          kitten @ set-spacing ${paddingModifier}=0;
+          nvim .;
+          kitten @ set-spacing ${paddingModifier}=10;
+        };
+
+        alias nvim = do {
+          kitten @ set-spacing ${paddingModifier}=0;
+          nvim;
+          kitten @ set-spacing ${paddingModifier}=10;
+        };
       '';
     };
   };
