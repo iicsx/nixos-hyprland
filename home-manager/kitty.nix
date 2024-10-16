@@ -9,7 +9,7 @@
         confirm_os_window_close = 0;
         background = "#171717";
         foreground = "#b2b5b3";
-        background_opacity = "0.5";
+        background_opacity = "0.33";
       };
   };
 }
