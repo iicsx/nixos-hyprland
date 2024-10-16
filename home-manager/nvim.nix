@@ -3,8 +3,10 @@
   lib,
   ...
 }: {
+  imports = [
+    ./modules/nvim/init.nix
+  ];
   xdg = {
-    configFile.nvim.source = ../nvim;
     desktopEntries."nvim" = lib.mkIf pkgs.stdenv.isLinux {
       name = "NeoVim";
       comment = "Edit text files";
@@ -23,6 +25,7 @@
 
   programs.neovim = {
     enable = true;
+    defaultEditor = true;
     # viAlias = true;
     # vimAlias = true;
 
