@@ -17,6 +17,7 @@
 
     "gs" = "git status";
     "gd" = "git diff";
+    "gcb" = "git rev-parse --abbrev-ref HEAD";
     "gb" = "git branch";
     "gch" = "git checkout";
     "gc" = "git commit";
