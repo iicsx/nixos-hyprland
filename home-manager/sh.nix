@@ -16,6 +16,9 @@
 
     "gs" = "git status";
     "gd" = "git diff";
+    "gds" = "git diff --staged";
+    "gr" = "git restore";
+    "grs" = "git restore --staged";
     "gb" = "git branch";
     "gch" = "git checkout";
     "gc" = "git commit";
