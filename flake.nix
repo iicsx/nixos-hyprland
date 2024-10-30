@@ -29,6 +29,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixCats.url = "github:BirdeeHub/nixCats-nvim";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -37,6 +38,11 @@
 
     zen-browser = {
       url = "github:n3xistence/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nvim-flake = {
+      url = "github:n3xistence/nvim-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
