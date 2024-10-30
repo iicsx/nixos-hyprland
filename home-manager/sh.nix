@@ -20,10 +20,8 @@
     "gr" = "git restore";
     "grs" = "git restore --staged";
     "gb" = "git branch";
-    "gch" = "git checkout";
     "gc" = "git commit";
     "ga" = "git add";
-    "gr" = "git reset --soft HEAD~1";
 
     "sudoe" = "sudo -E -s";
   };
