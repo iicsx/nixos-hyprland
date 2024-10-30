@@ -7,7 +7,7 @@
   aliases = {
     "db" = "distrobox";
     "tree" = "eza --tree";
-    "vh" = "nvim .";
+    "vh" = "vim .";
 
     "la" = "ls -la";
 
