@@ -9,6 +9,7 @@ in {
       credential.helper = "store";
       github.user = name;
       push.autoSetupRemote = true;
+      init.defaultBranch = "main";
     };
     delta = {
       enable = true;
