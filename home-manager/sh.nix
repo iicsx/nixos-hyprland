@@ -22,6 +22,7 @@
     "gb" = "git branch";
     "gc" = "git commit";
     "ga" = "git add";
+    "glo" = "git log --oneline";
 
     "sudoe" = "sudo -E -s";
   };
