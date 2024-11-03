@@ -20,7 +20,7 @@
   programs.neovim.enable = true;
   home = {
     packages = with inputs; [
-      inputs.nvim-flake.packages.${pkgs.system}.default
+      nvim-flake.packages.${pkgs.system}.default
     ];
     sessionVariables = {
       EDITOR = "${inputs.nvim-flake.packages.${pkgs.system}.default}";
