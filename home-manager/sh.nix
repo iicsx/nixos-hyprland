@@ -68,6 +68,7 @@ in {
         EDITOR = ''"${config.home.sessionVariables.EDITOR}"'';
         VISUAL = ''"${config.home.sessionVariables.VISUAL}"'';
         BAT_THEME = ''"Monokai Extended"'';
+        LIBVIRT_DEFAULT_URI = ''"qemu:///system"'';
       };
       extraConfig = let
         conf = builtins.toJSON {
