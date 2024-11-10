@@ -142,17 +142,17 @@ in {
           "SUPER, C, killactive"
           "SUPER, V, togglefloating"
           "SUPER, F, fullscreen"
-          "SUPER, H, togglesplit"
+          "SUPER, T, togglesplit"
           "SUPER, S, togglespecialworkspace"
 
-          (mvfocus "k" "u")
-          (mvfocus "j" "d")
-          (mvfocus "l" "r")
-          (mvfocus "h" "l")
-          (ws "left" "e-1")
-          (ws "right" "e+1")
-          (mvtows "left" "e-1")
-          (mvtows "right" "e+1")
+          (mvfocus "left" "l")
+          (mvfocus "down" "d")
+          (mvfocus "up" "u")
+          (mvfocus "right" "r")
+          (ws "h" "e-1")
+          (ws "l" "e+1")
+          (mvtows "h" "e-1")
+          (mvtows "l" "e+1")
           (mvtows "s" "special")
           (resizeactive "k" "0 -20")
           (resizeactive "j" "0 20")
