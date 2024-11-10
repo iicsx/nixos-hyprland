@@ -37,12 +37,12 @@
     };
 
     zen-browser = {
-      url = "github:n3xistence/zen-browser-flake";
+      url = "github:pneumaea/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nvim-flake = {
-      url = "github:n3xistence/nvim-flake";
+      url = "github:pneumaea/nvim-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
