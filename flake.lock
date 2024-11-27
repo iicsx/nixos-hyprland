@@ -775,11 +775,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1731242404,
-        "narHash": "sha256-JGIc8NMy87khycZEOYjzWrzv5iVGNYKlXiwNDP+noMk=",
+        "lastModified": 1731345891,
+        "narHash": "sha256-eagkjdDY5pwlHoCkD1PCcCfqOB6UIx7GiUT3ghuy/Gg=",
         "owner": "pneumaea",
         "repo": "zen-browser-flake",
-        "rev": "625931d931c41815e84be463d556ee820d9bc448",
+        "rev": "75c0625426a460ed53ce27d797b28ff3199f112f",
         "type": "github"
       },
       "original": {
