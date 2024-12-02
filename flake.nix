@@ -59,7 +59,7 @@
     };
 
     matugen.url = "github:InioX/matugen?ref=v2.2.0";
-    ags.url = "github:Aylur/ags";
+    ags.url = "github:Aylur/ags/v1";
     astal.url = "github:Aylur/astal";
 
     lf-icons = {
