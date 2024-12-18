@@ -3,6 +3,7 @@
   config,
   ...
 }: let
+  /*
   nerdfonts = pkgs.nerdfonts.override {
     fonts = [
       "Ubuntu"
@@ -13,6 +14,17 @@
       "Mononoki"
     ];
   };
+  */
+  nerdfonts = {
+    fonts = with pkgs; [
+      nerd-fonts.ubuntu
+      nerd-fonts.ubuntu-mono
+      nerd-fonts.caskaydia-cove
+      nerd-fonts.fantasque-sans-mono
+      nerd-fonts.fira-code
+      nerd-fonts.mononoki
+    ];
+  };
 
   theme = {
     name = "adw-gtk3-dark";
@@ -20,7 +32,8 @@
   };
   font = {
     name = "Ubuntu Nerd Font";
-    package = nerdfonts;
+    # package = nerdfonts;
+    package = pkgs.nerd-fonts.ubuntu;
     size = 11;
   };
   cursorTheme = {
