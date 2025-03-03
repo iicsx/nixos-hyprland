@@ -17,6 +17,7 @@
       # yabridgectl
       # wine-staging
       nodejs
+      onlyoffice-bin
     ];
     cli = [
       bat
