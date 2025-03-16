@@ -609,17 +609,18 @@
           "nixpkgs"
         ],
         "plugins-format-on-save": "plugins-format-on-save",
+        "plugins-gint-nvim": "plugins-gint-nvim",
         "plugins-gp-nvim": "plugins-gp-nvim",
         "plugins-oh-lucy-nvim": "plugins-oh-lucy-nvim",
         "plugins-render-markdown-nvim": "plugins-render-markdown-nvim",
         "plugins-vim-rest-console": "plugins-vim-rest-console"
       },
       "locked": {
-        "lastModified": 1741983877,
-        "narHash": "sha256-9eBAvIhSK+AKWEvsRwB8rZc06bqPsFcS0BYpKebR7cY=",
+        "lastModified": 1742165285,
+        "narHash": "sha256-Q3ulMZBedlPb4aXFSIPxjyrxtuYUGV0dOoXOwJnodsg=",
         "owner": "pneumaea",
         "repo": "nvim-flake",
-        "rev": "f04583778979dda315d1e82a069218bfe1a1e60d",
+        "rev": "fd99de7089bb51d3f42fdcc56c963972667bb651",
         "type": "github"
       },
       "original": {
@@ -641,6 +642,22 @@
       "original": {
         "owner": "elentok",
         "repo": "format-on-save.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-gint-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730753064,
+        "narHash": "sha256-FagvPxuHqmJu5lbkYi8lW/CkKXkK3W+UCTnzULvbd6A=",
+        "owner": "pneumaea",
+        "repo": "gint-nvim",
+        "rev": "300dce3f60a2faa25cf3fe9e4812b683df2a0f84",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pneumaea",
+        "repo": "gint-nvim",
         "type": "github"
       }
     },
