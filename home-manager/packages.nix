@@ -18,6 +18,7 @@
       # wine-staging
       nodejs
       onlyoffice-bin
+      alsa-lib
     ];
     cli = [
       bat
