@@ -4,9 +4,9 @@ in {
   home = {
     sessionVariables.BROWSER = "firefox";
 
-    file."firefox-gnome-theme" = {
-      target = ".mozilla/firefox/default/chrome/firefox-gnome-theme";
-      source = inputs.firefox-gnome-theme;
+    file."firefox-nebula-theme" = {
+      target = ".zen/sz2vv5ic.default/chrome/firefox-nebula-theme";
+      source = inputs.firefox-nebula-theme;
     };
   };
 
@@ -29,10 +29,10 @@ in {
         "gnomeTheme.tabsAsHeaderbar" = false;
       };
       userChrome = ''
-        @import "firefox-gnome-theme/userChrome.css";
+        @import "firefox-nebula-theme/userChrome.css";
       '';
       userContent = ''
-        @import "firefox-gnome-theme/userContent.css";
+        @import "firefox-nebula-theme/userContent.css";
       '';
     };
   };

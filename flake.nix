@@ -67,8 +67,8 @@
       flake = false;
     };
 
-    firefox-gnome-theme = {
-      url = "github:rafaelmardojai/firefox-gnome-theme";
+    firefox-nebula-theme = {
+      url = "github:JustAdumbPrsn/Nebula-A-Minimal-Theme-for-Zen-Browser";
       flake = false;
     };
   };
